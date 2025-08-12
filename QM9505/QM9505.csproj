@@ -1,0 +1,3404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8F3B42C-93B2-47E8-9D1D-023DE0BDCE5C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QM9505</RootNamespace>
+    <AssemblyName>QM9505</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>乾鸣科技.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adodb, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar.Design, Version=11.7.0.6, Culture=neutral, PublicKeyToken=2c9ff1fddc42653c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DevComponents.DotNetBar.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.7.0.6, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\DevComponents.DotNetBar2.dll</HintPath>
+    </Reference>
+    <Reference Include="RRQMCore, Version=8.1.0.0, Culture=neutral, PublicKeyToken=83a466fd8c19d6a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RRQMCore.dll</HintPath>
+    </Reference>
+    <Reference Include="RRQMSocket, Version=8.1.0.0, Culture=neutral, PublicKeyToken=83a466fd8c19d6a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RRQMSocket.dll</HintPath>
+    </Reference>
+    <Reference Include="RRQMSocket.Http, Version=8.1.0.0, Culture=neutral, PublicKeyToken=83a466fd8c19d6a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RRQMSocket.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="RRQMSocket.RPC, Version=8.1.1.0, Culture=neutral, PublicKeyToken=83a466fd8c19d6a7, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\RRQMSocket.RPC.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Access.cs" />
+    <Compile Include="AsyncTcpClient.cs" />
+    <Compile Include="AutoSizeFormClass.cs" />
+    <Compile Include="ControlForm\GPSForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ControlForm\GPSForm.Designer.cs">
+      <DependentUpon>GPSForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelHelper.cs" />
+    <Compile Include="Helping.cs" />
+    <Compile Include="InfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoForm.Designer.cs">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs" />
+    <Compile Include="PhotoTcpServer.cs" />
+    <Compile Include="POPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POPForm.Designer.cs">
+      <DependentUpon>POPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="csv.cs" />
+    <Compile Include="DataGrid.cs" />
+    <Compile Include="exetowinform.cs" />
+    <Compile Include="Function.cs" />
+    <Compile Include="gts.cs" />
+    <Compile Include="INIHelper.cs" />
+    <Compile Include="IOForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IOForm.Designer.cs">
+      <DependentUpon>IOForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManualForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManualForm.Designer.cs">
+      <DependentUpon>ManualForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Method.cs" />
+    <Compile Include="Motion.cs" />
+    <Compile Include="ParameterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ParameterForm.Designer.cs">
+      <DependentUpon>ParameterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QRTcpClient.cs" />
+    <Compile Include="RecordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordForm.Designer.cs">
+      <DependentUpon>RecordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AlarmForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AlarmForm.Designer.cs">
+      <DependentUpon>AlarmForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RobotTcpServer.cs" />
+    <Compile Include="Service References\ServiceWeb\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="TCPForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCPForm.Designer.cs">
+      <DependentUpon>TCPForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Temperature1.cs" />
+    <Compile Include="Temperature2.cs" />
+    <Compile Include="TrayForm\Tray10Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayForm\Tray10Form.Designer.cs">
+      <DependentUpon>Tray10Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm\Tray1Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayForm\Tray1Form.Designer.cs">
+      <DependentUpon>Tray1Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm\Tray2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayForm\Tray2Form.Designer.cs">
+      <DependentUpon>Tray2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm\Tray3Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayForm\Tray3Form.Designer.cs">
+      <DependentUpon>Tray3Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm\Tray4Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayForm\Tray4Form.Designer.cs">
+      <DependentUpon>Tray4Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm\Tray5Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayForm\Tray5Form.Designer.cs">
+      <DependentUpon>Tray5Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm\Tray6Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayForm\Tray6Form.Designer.cs">
+      <DependentUpon>Tray6Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm\Tray7Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayForm\Tray7Form.Designer.cs">
+      <DependentUpon>Tray7Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm\Tray8Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayForm\Tray8Form.Designer.cs">
+      <DependentUpon>Tray8Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TrayForm\Tray9Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TrayForm\Tray9Form.Designer.cs">
+      <DependentUpon>Tray9Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraySetForm\Tray10SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraySetForm\Tray10SetForm.Designer.cs">
+      <DependentUpon>Tray10SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraySetForm\Tray1SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraySetForm\Tray1SetForm.Designer.cs">
+      <DependentUpon>Tray1SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraySetForm\Tray2SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraySetForm\Tray2SetForm.Designer.cs">
+      <DependentUpon>Tray2SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraySetForm\Tray3SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraySetForm\Tray3SetForm.Designer.cs">
+      <DependentUpon>Tray3SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraySetForm\Tray4SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraySetForm\Tray4SetForm.Designer.cs">
+      <DependentUpon>Tray4SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraySetForm\Tray5SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraySetForm\Tray5SetForm.Designer.cs">
+      <DependentUpon>Tray5SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraySetForm\Tray6SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraySetForm\Tray6SetForm.Designer.cs">
+      <DependentUpon>Tray6SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraySetForm\Tray7SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraySetForm\Tray7SetForm.Designer.cs">
+      <DependentUpon>Tray7SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraySetForm\Tray8SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraySetForm\Tray8SetForm.Designer.cs">
+      <DependentUpon>Tray8SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TraySetForm\Tray9SetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TraySetForm\Tray9SetForm.Designer.cs">
+      <DependentUpon>Tray9SetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TXT.cs" />
+    <Compile Include="UserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForm.Designer.cs">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Variable.cs" />
+    <EmbeddedResource Include="ControlForm\GPSForm.resx">
+      <DependentUpon>GPSForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="POPForm.resx">
+      <DependentUpon>POPForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IOForm.resx">
+      <DependentUpon>IOForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManualForm.resx">
+      <DependentUpon>ManualForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ParameterForm.resx">
+      <DependentUpon>ParameterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RecordForm.resx">
+      <DependentUpon>RecordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AlarmForm.resx">
+      <DependentUpon>AlarmForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCPForm.resx">
+      <DependentUpon>TCPForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm\Tray10Form.resx">
+      <DependentUpon>Tray10Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm\Tray1Form.resx">
+      <DependentUpon>Tray1Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm\Tray2Form.resx">
+      <DependentUpon>Tray2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm\Tray3Form.resx">
+      <DependentUpon>Tray3Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm\Tray4Form.resx">
+      <DependentUpon>Tray4Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm\Tray5Form.resx">
+      <DependentUpon>Tray5Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm\Tray6Form.resx">
+      <DependentUpon>Tray6Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm\Tray7Form.resx">
+      <DependentUpon>Tray7Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm\Tray8Form.resx">
+      <DependentUpon>Tray8Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TrayForm\Tray9Form.resx">
+      <DependentUpon>Tray9Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraySetForm\Tray10SetForm.resx">
+      <DependentUpon>Tray10SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraySetForm\Tray1SetForm.resx">
+      <DependentUpon>Tray1SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraySetForm\Tray2SetForm.resx">
+      <DependentUpon>Tray2SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraySetForm\Tray3SetForm.resx">
+      <DependentUpon>Tray3SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraySetForm\Tray4SetForm.resx">
+      <DependentUpon>Tray4SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraySetForm\Tray5SetForm.resx">
+      <DependentUpon>Tray5SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraySetForm\Tray6SetForm.resx">
+      <DependentUpon>Tray6SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraySetForm\Tray7SetForm.resx">
+      <DependentUpon>Tray7SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraySetForm\Tray8SetForm.resx">
+      <DependentUpon>Tray8SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TraySetForm\Tray9SetForm.resx">
+      <DependentUpon>Tray9SetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForm.resx">
+      <DependentUpon>UserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ActiveTopLogRuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddAutoEquipmentSetUpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddBorrowInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddCGSBillingInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddCycleTimeSettingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddDownTimeFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddEmployeeNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddEquipmentAlarmSetUpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddFutureHoldAdjustResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddHuChongSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddIdentificationCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddIMCBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddInkDieMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddInMagazineNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddInspectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddInvLotMappingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddJumpQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddLabelCheckFailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddLabelMappingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddLIFOBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddLotBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddMagazineBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddMagazineErrorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddMagazineNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddMagazineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddMarkingContentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddMaterialCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddMaterialDifferencesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddMaterialHeaderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.addMoudleByPassLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddMsgBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddOpTimeErrorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddOpToOpTimeSetting1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddOpToOpTimeSettingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddOutMagazineNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddPackingListBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddPackingListDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddPMFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddPrebakeFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddPrintLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddPrintPageLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddPropertyByTopLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddRequestQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddResinBasisItemResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddReturnInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddSequenceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddShippingInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddShippingListBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddShippingListDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddShipRptAddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddSSDSerialNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddStorageInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddStripMapAtrribResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddSumOfResourceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddUserBacodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AddWaferIdInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Add_AttachFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ApproveLotPropertyApplyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ApprovePackingListBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ApproveShippingListBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.AutoSendMail_PrdMailCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.BakeTimelinessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.BASKETCHECKResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CalMaterial_OSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChangeLabelQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Check506AutoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Check618FirstlotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Check664QTYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Check723PackingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Check765CustomerBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Check765ShipMaintainResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Check765ShipReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Check782UPNResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Check816LotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckBakeAutoErfResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckBaseLotEQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckBaselotnoByLabelcodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckBaseLowYieldTwiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckBaseQTYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckBINOHold2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckBINOHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckbtPrivResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckCertificationEqpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckCertificationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckComponentRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckCompoundTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckCompundScrapDateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckCompundUsedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckCreateIn2MonthResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckCurCnoDoneResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckCustEventResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckEAPQTYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckEQCOutAllResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckEqpDownTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckEQPlotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CHECKEQPProgramResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CHECKEQPStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckEquipmentAlarmHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckESMTMergeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckFirstlotHoldReleaseUnPackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckFirstOrUpdateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckFSFirstlotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckFullBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckFutureHoldForDryBakeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckFutureHoldForSTJResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckFutureHoldLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckGWDonewResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckHasCreateErfResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckHasFinishResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckHasHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckHasLabelDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckHasPictureResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckHasPrivilegeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckIdentificationCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckIdentificationOpnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckIfBorrowedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckIfReturnedResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckInBoxLabelADDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckInBoxPrintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckIncountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckInSameBoxAllPrintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckInTimeOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckInWeightSerialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckJSSingulationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckJumpLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckJumpOpUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckLMOpnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.checkLotFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckLotNoFirstlotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckLotProcessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckLotPropertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckMagazineFlagResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckMaterialControlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckMdCompoundResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckMDFirstResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckMDOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.checkMergeLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckMergeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckMtlConNoChoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckMtlCtlLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckMtlCtlMtlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOPCheckinOnlyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOpFailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.checkOPNOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOPNValueResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOpTimeErrorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOsOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOutBoxLabelADDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOutBoxLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOutBoxPrintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOutBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOverUseLifeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckOVTwoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckPackBaseFirstResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckPieceNoHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckQTYCompareResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CHECKRCSCARNResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckRemAndDefineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckResinMaintainResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckResinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CHECKRUNCARDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSameLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSameMapAtrribResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSameOutBoxPrintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSelectMtlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSelectMtlTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSelectSMTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckShipLimitResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSOFirstlotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSplitOrMergeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSSDBoxPrintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSSDBoxSerialNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSSDFirstLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckStartOpnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckSYLYieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CHECKTRIMFSProgramResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckUserExistResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckUserFIFOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckUserPrivilegeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckVacuumLabelADDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckVacuumLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckWaferDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CheckYieldTargetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Chk515DoubleLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Chk559And864LabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Chk759MergeByPassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Chk765BResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Chk765ShippingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Chk782PackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkBMStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkCGSEngineerResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkCheckInLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkDBLotLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkDescriptionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CHKEQPBuyoffResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkEqpChangeBaseLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkEQPProgramResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkEQPUseHisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkFirstInComingLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkFQCOpNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkFSFirstLotReflowResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkFTLotStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkFTOPNOStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkHasOutsideOSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.chkIfHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkJSBaselotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkJSFirstResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CHKKITBarcodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkLabelPrintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkLMFirstLotPrivResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkLMMagazineNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkLotTrimErrorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMagaNumResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMagazineCleanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMagazineMsgResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMAGAZINEResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMaterialControlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMaterialForWBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMaterialStorageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMDEQPStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMDScrapdataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMDStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMDStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMergeByPassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMOCreateUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMoudlePassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMtlAppointResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMtlEqpScrapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkMtlHasOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.chkOpFirstResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkOpNodeidResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.chkOpProcessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkPrdAutoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.chkProsuctTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkPSDayFirstResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkRcPrintByPassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkRcSelectMtlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkREFLOWStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkReplaceMaterialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CHKRunCardBIOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CHKRunLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkSelectLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkShiftFirstLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkSMTDescriptionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CHKSorterKeyBuyoffResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkStripQtyKeyInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkTimeOutPassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkUserExamResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkUserSecurityforPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkWaferLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkWaitInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkWBFirstResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ChkWeekFirstResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.CreateErfForBakeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DBTimelinessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelCGSBillingInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelCGSDeviceNoPriceCustResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelCGSDeviceNoPriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelComponentRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelEqpBasisLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelFutureHoldRuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelIdentificationCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelInboxLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelInkdieMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelInspectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelInvDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelIPCNSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelLabelMappingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelLotPropertyApplyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelOutboxLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelPackingListBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelPrdTypeYieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelShippingListBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelShippingListInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelUserBarcodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelVacuumLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DelWGFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DieTestBinMergeInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.DrawbackQtyAdjustResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditAutoSysBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditCertificationEqpnoMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditCertificationOpnoMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditCertificationPrdtypeMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditCGSBillingInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditCPTOCOGPropertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditCPTOCOGShipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditCycleTimeSettingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditDelayLotReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditImportWeightForLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditInkdieMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditIPCNSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditLabelMappingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditLotBasisOnlineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditLotBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditLotPropertyChangeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditLotStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditMagazineBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditMarkingContentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditMOPropertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditMoYaProgrammeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditMtlCtlList1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditMtlCtlListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditOpTimeSettingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditPackingListBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditPackingListDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditPrdTypeYieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditShippingListBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditShippingListDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditShipRptAddResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditStorageInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EditWIQCBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ExecuteLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ExeOSReturnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_AddPackingListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_AddShippingListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_ChangeEquipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EXE_ChangeQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_CheckInForEAPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_CheckInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_CheckIn_OutSource_LotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_CheckOutForEAPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_CheckOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_CheckOut_OutSource_LotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_EditPackingListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_EditShippingListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_ERF_CreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_FutureHold_SetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_LotQtyAdjustResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_Manual_LotSplitResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.EXE_MESToFTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_Other_FutureHold_SetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Exe_WGHold_SetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.findShippingRuleByProductNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.findusernameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.FTCGSReworkReleaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.funChkFTUndoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.funGetMaxInBoxNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.funGetMaxOutBoxNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.funGetMaxReelNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.funGetMaxVacuumNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.funGetOutBoxInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.funGetUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.funLoadFirstQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.FutureHoldCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GainBARCODEResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GainModelTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GainOpNodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Get3QCQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Get515EMMCBOr864EMMCBRemarkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Get515YieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Get592PrdSqtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Get592PrdTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Get759QRCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.get782EXPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Get782MZSequenceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.get782UPNResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Get856MaxQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Get864BarcodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Get896LabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetActCycleTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetAluminum_Plate_NoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetAssylotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetAssyQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetAssyVersionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetASSY_QC_TempResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBakeTimeThreeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBakeTimeTwoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBarcodeLimitResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBarcodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBaseLotBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBaseLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBinBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBinBasisValueResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBinClassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBinErrorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBinFTQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBinMESErrorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBinTrayQTYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBMEquipStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBMInfoFromMagazineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBMInfoFromPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBMPropertyForPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBoxIDSequenceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetBoxSerialNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCARTONIDSequenceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCGSNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCheckInTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCMSNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCurOpNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCUSTCODEEResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCUSTOMERJOBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCustomerLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCUSTOMERLOTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCustomerNameByLabelCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCustomerNoByLabelCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCustomerNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCustomerSpecResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetCZXHSequenceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetDATECODEResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetDBEPOXYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetDBNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetDBPropertyForPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetDBSMTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetDBWAFERResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.getDeviceNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.getDeviceNoShippingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetDeviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetDrawDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetEQPportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetEquipMagazinenoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetEquipMDThickResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetEquipmnetStatusForPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetERPExpiration_DateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetERPMaterialMatchQTYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetErrorCodeByLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetErrorCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetFromOpNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetFT1QtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetFT2QtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetFTQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetFVIQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetGDGIGIResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetInboxNoByInboxNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetInboxNoByLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetInboxToCustomerNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetInboxToLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetInfoFromVendorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetInMagazineNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetInputQTYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetJumpQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetKdieBaseLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetKDieBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLastOpNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLeadFrameQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLMOpNoForSTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLocatorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotDeviceNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotEPOXYBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotERFBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotKnifeBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotMCBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotNosFromVacuumNoListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotNoToCheckTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotSerialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotStatusForBakeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotToCustomerNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotWBDrawingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotWBDRAWResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLotWireBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetLSCODEResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetM5PropertyValueResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMagazineNo_fromeqpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMagazineNo_fromequipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMagazineRuleBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMagazineRuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMapCustomerLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMapCustomerNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMappingCustomerLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMappingCustomerNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMARKResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMaterialNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMaterialQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMaterialtypeEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMaxLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMaxMaterialCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMaxPackingListNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMaxShippingListFormNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMaxShippingListNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMClassNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMesCardTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMesCustMaterialNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMesCustomerNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMesDeviceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMesIncomingNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMesSMTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMESTesterIDResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMesTestParameterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMiddleProductTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetMMPrdSerialNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetModelTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetNWResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOPFirstResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOpNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOpNoToOpTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOpOrderResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOPStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetORIGINALLOTNOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOSMailInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOSPONoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOSPOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOutBoxNoByOutBoxNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOutBoxNWResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOutLineDrawforPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOutMagazineNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOvenCueExpoyForPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetOvenCueProgramForPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetPackageTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetPACKToOQCTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetParameterValue_SPCResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetPdBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetPRDOpnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetPrdTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetPrdTypeYieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetPrintCountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetProductNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetProductNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetProductResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetProductTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetPtypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetReelVacuumNoNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetSegment2Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetSegment3Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetSegment4Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetSegmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetSequenceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetSplitFlagResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.getStartTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetstrBladeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetStripForVIResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetStripQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetStripTimeFlagResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetStripTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetstrPatternInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetstrSubstrateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetTotalNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetVacuumNoByLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetVacuumNoByVacuumNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetVacuumNoNumberResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetVacuumToCustomerNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetVacuumToLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetWBFTYieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetWBJudgeForPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetWBNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetWBProgramForPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetWBPropertyForPGMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetWGAttachFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetwiptypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetWMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.GetZNN01S0Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ImportINVBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ImportWaferIQCResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ImportWeightForLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.IPCNSetAlertResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LMMagazineNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.load515lotbasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadAllowSelectLotInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadAreaBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadAvailableEquipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadBaseLotnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadBinQtyTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadBorrowInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadBoxNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadBRRunCardHeader_ZKTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadBtShipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCategoryDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCategoryMtlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCertificationEqpnoMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCertificationOpnoMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCertificationOpnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCertificationPrdtypeMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCertificationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCGSBillingInvoiceNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCGSBillingInvoiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCGSDeviceNoPriceCustResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCGSDeviceNoPriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCGSPriceRateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCGSReworkShipnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCGSShippingFormResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadComponentRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCompoundResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCont_EquipmentLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCont_ErrorDrawbackResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCPTOCOGShipDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCustomer1BasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCustomer2BasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCustomerBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCustomerNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCycleTimeMainResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadCycleTimeReasonResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadDailyTargetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadDateCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadDelayLotDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadDelayLotQueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadDelayLotReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadDelayLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadDepBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadDieSortingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadEFSDByLotnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadEfsdLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadEMailInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadEqpBasisLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadEqpNoDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadEquipmentFilterResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadEquipmentNoBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadEquipmentSetUpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadERFBasisJoinLotBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadERFBasisJoinLotStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadERFHoldReasonJoinItemBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadFGDInventoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadFTCGSReworkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadFTShippingListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadFutureHoldOtherResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadGroupAddressResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadHuChongBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadIdentificationCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadIdentificationOpnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadIdentificationSegmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadIMCBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadInBoxLabelBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadInkDieMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadInspectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadInvBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadINVDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadInventoryNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadInvInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadInvLotInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadInvLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadInvToLocatorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadIPCNSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadJSBinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadKltOsReturnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelBasisByCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelCheckBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelDetailByCodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelImportListExcelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelInBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelOutBoxResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelPackingListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelPrintBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelPrintMaterialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelPrint_WaferResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLabelReelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLastMagazineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLocartorBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLocationAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLocationByLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLocationHisByLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLocationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLocationTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLocatorNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotBasisAutoSysDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotBasisAutoSysResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotBasisJoinStateOSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotBasisJoinStateSimpleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotBinClassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotByApplyNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotByBinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotByRoNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotInvBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotInvResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotLogReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotMBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotOpnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotPropertyChangeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotStateBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotStateByBinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotStateByOPNOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotStateByResinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotStateForCreateOSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotTopBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadLotTopsideMarkResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMagazineBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMagazineNoBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMagazineNoCleanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMagazineTypeBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMarkingContentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialBasisDataMESResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialBasisTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialDifferencesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialIssueLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialLabelCategoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialLabelNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialLotTimeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialLot_DBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterialNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMaterial_BinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMDResinStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMergeLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMOBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMOJoinLotPropertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMOPropertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMOUnreleaseQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMoYaProgrammeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMtlCtlListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMtlCtlLotnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMtlCtlMtlLotnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMtlCtlMtlnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadMTLNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadOemoDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadOemoPropertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadOPClassResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadOPTimeSettingMainResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadOpToOpTimeSettingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadOSTransResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadOutBoxLabelBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPackingListBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPackingListCNOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPackingListDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPackingListDetailWeightResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPackingListDetail_506Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPictureResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPoByBaseLotnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPrdInvListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPrdMagazineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPrdMenuQResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPrdMenuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPrdSelectListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPrdSelectNotSMTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPrdTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPrdYieldSetDetialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadProcessOpnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadProductAreaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadProductBasisByRonoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadProductNameMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadProductProcessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadProductTypeFromErpResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadProgramgroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadPropertyBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadReleaseMOBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadReturnInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadROBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadScrapQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadScrapShipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSelectBySelectLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSelectLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSelectMtlByLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSelectMtlByMoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSelectMtlQueryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSelectMtlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSelectMtlTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSelectSMTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShippingListBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShippingListByCustResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShippingListDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShippingListInEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShippingListInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShippingListReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShippingListToKLTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShippingLotDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShippingRuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShipRptDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShipRptEditResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadShipRptMainResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSMTByLotnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSMTLotMBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSMTReleaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSolderPasteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSplitLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSSDDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadStorageInfoBySqeNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadStorageInfoDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadStorageInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadStorageSeqResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadSYLBurnInYieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadTempDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadTopLogoDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadUnSelectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadUserBarcodeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadUserBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadVacuumLabelBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWaferIdInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWaferIQCBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWaitLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWBDrawResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWeightBoxNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWeightImportDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWeightLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWeightSerialNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWGHoldInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWIPInventory_SEMI_TurnkeyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWipInvLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWIPOSDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWIP_ScrapByErrorResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LoadWIP_ScrapForERFResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Lot515LMPorpertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Lot744LMPorpertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Lot744LMSplitPorpertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Lot763LMPorpertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Lot763LMSplitPorpertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LotLMPorpertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LotLMSplitPorpertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.LotMagazineBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.MAGAZINECHECKResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.MaterialDeliverNoticeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.MDMagazineCompareResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.PCTimelinessNewResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.PCTimelinessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.PrintAllLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.PropertyMailCheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ProvideLotInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.PSMagazineCompareResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ReceiveINVMTLResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ReceiveINVSendResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ReceiveSelectSendResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ResponseFCByLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ResponseLeadScanPortResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ResponseLMByLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ResponseMDByLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ResponseMDMaterielInfoByLotNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ResponsePGMWebServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.RetrunSORTERKEYWebServiceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ReturnCheckHourResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ReturnInfoFromMESResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ReturnLabelQTYResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ReturnLotFromMESResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ReverseTriggerOPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveComponentRecordResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveInBoxLabelPrintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveIPCNSetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveLabelDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveLabelDetailSSDNWResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveLastQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveLotBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveLotBinQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveLotEQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveLotPropertyChangeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveLotStripQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveMagazinePropertyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveMouldLimitResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveOSScrapQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveOutBoxLabelPrintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveOutBoxSerialNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveOutBoxWeightResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SavePrdMenuResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SavePrdSerialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SavePrdTypeYieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveReelBoxLabelPrintResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveSelectMtlPassLogResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveSelectMtlResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveSelectMtlTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveSelectSMTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveShippingInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveTopLogoDataResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SaveVacuumLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ScrapQtyByProcessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SelectAllLabelModelNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SelectAllLabelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SelectAutoEquipmentResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SelectEquipmentAlarmResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SendCGSEmailToGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SendEmailToGroupForShippingResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SendEmailToGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SendLMEmailToGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SendSSDEmailToGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SetEquipMDThickResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SetLotBasisLotStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SetMagazineFromEquipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SetMonoBinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SetNotWIPLotStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SetOverTimeFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SetQCFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SetUSONFutureHoldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SetWipToInvResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.ShowShippingRuleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SplitCPtoCOGResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.SublotQtyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.TimeSensitiveQueResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.TransDataToFTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.TransferLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.TriggerOPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.TypeCardCreateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Update765ShipReportSendMailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.Update856SerialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateCheckFlagResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateInspectionResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateLabelImportExeclResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateLendMaterialResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateOSTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdatePackinglistWeightResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateProcessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateReversehisTableResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateRuncardStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateShippingListInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateStorageFlagResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateSYLBurnInYieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.updateSYLYieldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateTargetResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdateYunDanResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdCertificationOpnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdCGSDeviceNoPriceCustResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdCGSDeviceNoPriceResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdCGSPriceRateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdIdentificationOpnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdLotSplit_BinResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdLotSplit_EfsdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpdLotSplit_SMTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.UpMagazineNoFlagResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WarnQCInspectResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGAddEolInvResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGAddEolShipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGAddFolInvResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGAddFolShipBTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGApproveTakeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGBrCheckInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGBrCheckOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditEolInvStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditEolShipStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditFolBTShipStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditFolInvStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditLotBasisEolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditLotBasisFolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditLotStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditLotTypeBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditLotTypeStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditRcvBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditRcvStatusResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGEditShipCustomsnoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGExecuteLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGGetLotBRResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGGetLotToCustomerNoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadAttribeCheckOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadBlueTapeInvResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadEolInvDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadEolShipDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadFolBTShipDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadFolInvDetailResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadInvBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadInvEolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadLabelPrintBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadLotBasisEolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadLotBasisFolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadLotReleaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadLotStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadLotTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadProberCardCheckInResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadProberCardCheckOutResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadProberCardResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadRcvBasisResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadRcvReleaseResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadSelectCustLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadSelectLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadSelectMapResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadShipBTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadShipResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadTakeEolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadTakeFolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadTestReportResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadThicknessResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadToInvEolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadToInvFolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadToShipEolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGLoadTypeResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGPrintInvEolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGPrintInvFolResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGPrintRcvResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGSaveSelectCustLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGSaveSelectLotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGTakeEolAppResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WGTakeFolAppResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WIPTypeCardQueResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WriteNetComPOResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\QM9505.ServiceWeb.WriteNetComPOTESTResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceWeb\wsWIP.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServiceWeb\configuration91.svcinfo" />
+    <None Include="Service References\ServiceWeb\configuration.svcinfo" />
+    <None Include="Service References\ServiceWeb\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="乾鸣科技.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="ADOX">
+      <Guid>{00000600-0000-0010-8000-00AA006D2EA4}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServiceWeb\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,2436 @@
+
+**********2023/06/02 15:32:14**********
+System.IO.DirectoryNotFoundException: 未能找到路径“D:\Map\photo\1\tray.txt”的一部分。
+   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy)
+   在 System.IO.FileStream..ctor(String path, FileMode mode)
+   在 QM9505.TXT.WriteTxt(String[] log, String path1)
+   在 QM9505.UserForm.RobotAutoStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/02 16:03:26**********
+索引超出了数组界限。   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/02 16:11:02**********
+索引超出了数组界限。   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.1\QM9505\UserForm.cs:行号 12633
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/02 16:12:04**********
+索引超出了数组界限。   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/02 17:06:28**********
+System.ArgumentOutOfRangeException: 长度不能小于 0。
+参数名: length
+   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1)
+   在 QM9505.UserForm.SaveNGCount(Int32 num)
+   在 QM9505.UserForm.RefreshT()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/02 19:07:48**********
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.RemoveItem(Int32 index)
+   在 System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.ClearItems()
+   在 System.Windows.Forms.DataVisualization.Charting.DataPointCollection.ClearItems()
+   在 System.Collections.ObjectModel.Collection`1.Clear()
+   在 System.Windows.Forms.DataVisualization.Charting.DataPointCollection.DataBindXY(IEnumerable xValue, IEnumerable[] yValues)
+   在 QM9505.UserForm.ProbRefresh()
+   在 QM9505.UserForm.RobotAutoStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/02 19:07:48**********
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.RemoveItem(Int32 index)
+   在 System.Windows.Forms.DataVisualization.Charting.ChartElementCollection`1.ClearItems()
+   在 System.Windows.Forms.DataVisualization.Charting.DataPointCollection.ClearItems()
+   在 System.Collections.ObjectModel.Collection`1.Clear()
+   在 System.Windows.Forms.DataVisualization.Charting.DataPointCollection.DataBindXY(IEnumerable xValue, IEnumerable[] yValues)
+   在 QM9505.UserForm.Chart()
+   在 QM9505.UserForm.RefreshT()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/02 20:19:09**********
+System.IndexOutOfRangeException: 索引超出了数组界限。
+   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.1\QM9505\UserForm.cs:行号 10569
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/05 13:52:47**********
+System.ComponentModel.Win32Exception (0x80004005): 创建窗口句柄时出错。
+   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.UserForm.DrawLine()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/05 19:08:15**********
+System.ComponentModel.Win32Exception (0x80004005): 创建窗口句柄时出错。
+   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.UserForm.DrawLine()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/06 11:14:33**********
+System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.Collections.ArrayList.get_Item(Int32 index)
+   在 System.Windows.Forms.DataGridViewRowCollection.SharedRow(Int32 rowIndex)
+   在 System.Windows.Forms.DataGridViewRowCollection.get_Item(Int32 index)
+   在 QM9505.UserForm.RefreshT() 位置 C:\Users\Administrator\Desktop\QM9505_23.6.6\QM9505\UserForm.cs:行号 11044
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/07 09:45:55**********
+System.ComponentModel.Win32Exception (0x80004005): 创建窗口句柄时出错。
+   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.UserForm.DrawLine()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/07 10:26:07**********
+索引超出了数组界限。   在 QM9505.TXT.ReadTxtToDataGridMethod1(DataGridView dataGridView, String[] str) 位置 C:\Users\Administrator\Desktop\QM9505_23.6.7\QM9505\TXT.cs:行号 264
+   在 QM9505.TraySetForm.Tray10SetForm.Tray10SetForm_Load(Object sender, EventArgs e) 位置 C:\Users\Administrator\Desktop\QM9505_23.6.7\QM9505\TraySetForm\Tray10SetForm.cs:行号 28
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.UserForm.LoadSubForm1(Object form) 位置 C:\Users\Administrator\Desktop\QM9505_23.6.7\QM9505\UserForm.cs:行号 15616
+   在 QM9505.UserForm.测试模组10ToolStripMenuItem2_Click(Object sender, EventArgs e) 位置 C:\Users\Administrator\Desktop\QM9505_23.6.7\QM9505\UserForm.cs:行号 15725
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/07 13:42:20**********
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 QM9505.ParameterForm.LoadPoint(String path)
+   在 QM9505.UserForm.RefreshT()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/07 13:45:16**********
+System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 C:\Users\Administrator\Desktop\QM9505_23.6.7\QM9505\ParameterForm.cs:行号 565
+   在 QM9505.UserForm.RefreshT() 位置 C:\Users\Administrator\Desktop\QM9505_23.6.7\QM9505\UserForm.cs:行号 11023
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/07 17:54:20**********
+System.ComponentModel.Win32Exception (0x80004005): 创建窗口句柄时出错。
+   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.UserForm.DrawLine()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/08 15:06:57**********
+System.ComponentModel.Win32Exception (0x80004005): 创建窗口句柄时出错。
+   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.UserForm.DrawLine()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/08 15:13:06**********
+System.ComponentModel.Win32Exception (0x80004005): 创建窗口句柄时出错。
+   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.UserForm.DrawLine()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/08 15:24:18**********
+System.ComponentModel.Win32Exception (0x80004005): 创建窗口句柄时出错。
+   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.UserForm.DrawLine()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/08 15:33:08**********
+System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.Collections.ArrayList.get_Item(Int32 index)
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(Int32 index)
+   在 QM9505.UserForm.Temp() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\UserForm.cs:行号 14152
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/08 15:33:08**********
+System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.Collections.ArrayList.get_Item(Int32 index)
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(Int32 index)
+   在 QM9505.UserForm.RefreshT() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\UserForm.cs:行号 11267
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/08 15:35:55**********
+System.ArgumentOutOfRangeException: 索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+   在 System.Collections.ArrayList.get_Item(Int32 index)
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(Int32 index)
+   在 QM9505.UserForm.RefreshT() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\UserForm.cs:行号 11267
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/08 17:06:44**********
+内存不足。   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 QM9505.UserForm.Down(String X, Enum logType, String content, String step, Int32 cancelStep, Int32 sureStep)
+   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:06:44**********
+内存不足。   在 System.Drawing.Graphics.CheckErrorStatus(Int32 status)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:07:18**********
+内存不足。   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 QM9505.UserForm.Down(String X, Enum logType, String content, String step, Int32 cancelStep, Int32 sureStep)
+   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:07:18**********
+内存不足。   在 System.Drawing.Graphics.CheckErrorStatus(Int32 status)
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:07:19**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.ScrollableControl.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Form.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:07:28**********
+内存不足。   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 QM9505.UserForm.Down(String X, Enum logType, String content, String step, Int32 cancelStep, Int32 sureStep)
+   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:07:28**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:07:31**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.ScrollableControl.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Form.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:07:51**********
+内存不足。   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 QM9505.UserForm.Down(String X, Enum logType, String content, String step, Int32 cancelStep, Int32 sureStep)
+   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:07:51**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:07:52**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.ScrollableControl.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Form.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:08:02**********
+内存不足。   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 QM9505.UserForm.Down(String X, Enum logType, String content, String step, Int32 cancelStep, Int32 sureStep)
+   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:08:02**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:09:20**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.ScrollableControl.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Form.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:09:24**********
+内存不足。   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 QM9505.UserForm.Down(String X, Enum logType, String content, String step, Int32 cancelStep, Int32 sureStep)
+   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:09:24**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:09:25**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.ScrollableControl.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Form.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:09:45**********
+内存不足。   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 QM9505.UserForm.Down(String X, Enum logType, String content, String step, Int32 cancelStep, Int32 sureStep)
+   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:09:45**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:09:55**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.ScrollableControl.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Form.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:09:55**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:10:24**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.ScrollableControl.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Form.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:10:24**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:10:52**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.ScrollableControl.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Form.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:10:58**********
+内存不足。   在 System.Drawing.Image.FromFile(String filename, Boolean useEmbeddedColorManagement)
+   在 System.Drawing.Image.FromFile(String filename)
+   在 QM9505.UserForm.Down(String X, Enum logType, String content, String step, Int32 cancelStep, Int32 sureStep)
+   在 QM9505.UserForm.AlarmScan1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:10:58**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:11:07**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.ScrollableControl.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Form.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:11:07**********
+参数无效。   在 System.Drawing.Image.get_FrameDimensionsList()
+   在 System.Drawing.ImageAnimator.CanAnimate(Image image)
+   在 System.Drawing.ImageAnimator.ImageInfo..ctor(Image image)
+   在 System.Drawing.ImageAnimator.Animate(Image image, EventHandler onFrameChangedHandler)
+   在 System.Windows.Forms.PictureBox.Animate(Boolean animate)
+   在 System.Windows.Forms.PictureBox.Animate()
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/08 17:11:09**********
+System.Data.OleDb.OleDbException (0x80004005): 超出系统资源。
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextErrorHandling(OleDbHResult hr)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandTextForSingleResult(tagDBPARAMS dbParams, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommandText(Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteCommand(CommandBehavior behavior, Object& executeResult)
+   在 System.Data.OleDb.OleDbCommand.ExecuteReaderInternal(CommandBehavior behavior, String method)
+   在 System.Data.OleDb.OleDbCommand.ExecuteNonQuery()
+   在 QM9505.Access.RecordAccess(Enum logType, String content)
+
+**********2023/06/08 20:13:25**********
+System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“Panel”。
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.ControlForm.GPSForm.DrawLine()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/08 20:13:51**********
+System.ObjectDisposedException: 无法访问已释放的对象。
+对象名:“Panel”。
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.ControlForm.GPSForm.DrawLine() 位置 C:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\ControlForm\GPSForm.cs:行号 71
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+
+**********2023/06/12 20:30:13**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   在 QM9505.IOForm.AddControl_Y(DataGridView dataGridView, Int32 num)
+   在 QM9505.IOForm.tabControl1_SelectedIndexChanged(Object sender, EventArgs e)
+   在 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.TabControl.WmSelChange()
+   在 System.Windows.Forms.TabControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/12 20:30:14**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.TabPage.set_Visible(Boolean value)
+   在 System.Windows.Forms.TabControl.UpdateTabSelection(Boolean updateFocus)
+   在 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.TabControl.WmSelChange()
+   在 System.Windows.Forms.TabControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/12 20:30:25**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   在 QM9505.IOForm.AddControl_Y(DataGridView dataGridView, Int32 num)
+   在 QM9505.IOForm.tabControl1_SelectedIndexChanged(Object sender, EventArgs e)
+   在 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.TabControl.WmSelChange()
+   在 System.Windows.Forms.TabControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/12 20:30:59**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.EnsureHandle()
+   在 System.Windows.Forms.Timer.TimerNativeWindow.StartTimer(Int32 interval)
+   在 System.Windows.Forms.Timer.set_Enabled(Boolean value)
+   在 System.Windows.Forms.MouseHoverTimer.Start(ToolStripItem item)
+   在 System.Windows.Forms.ToolStrip.OnMouseMove(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseMove(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/12 20:30:59**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.EnsureHandle()
+   在 System.Windows.Forms.Timer.TimerNativeWindow.StartTimer(Int32 interval)
+   在 System.Windows.Forms.Timer.set_Enabled(Boolean value)
+   在 System.Windows.Forms.MouseHoverTimer.Start(ToolStripItem item)
+   在 System.Windows.Forms.ToolStrip.OnMouseMove(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseMove(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/12 20:30:59**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.EnsureHandle()
+   在 System.Windows.Forms.Timer.TimerNativeWindow.StartTimer(Int32 interval)
+   在 System.Windows.Forms.Timer.set_Enabled(Boolean value)
+   在 System.Windows.Forms.MouseHoverTimer.Start(ToolStripItem item)
+   在 System.Windows.Forms.ToolStrip.OnMouseMove(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseMove(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/13 10:26:17**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   在 QM9505.IOForm.AddControl_Y(DataGridView dataGridView, Int32 num)
+   在 QM9505.IOForm.tabControl1_SelectedIndexChanged(Object sender, EventArgs e)
+   在 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.TabControl.WmSelChange()
+   在 System.Windows.Forms.TabControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/14 15:27:48**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   在 QM9505.IOForm.AddControl_Y(DataGridView dataGridView, Int32 num) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\IOForm.cs:行号 372
+   在 QM9505.IOForm.tabControl1_SelectedIndexChanged(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\IOForm.cs:行号 226
+   在 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.TabControl.WmSelChange()
+   在 System.Windows.Forms.TabControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/14 15:31:04**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   在 QM9505.IOForm.AddControl_Y(DataGridView dataGridView, Int32 num) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\IOForm.cs:行号 372
+   在 QM9505.IOForm.tabControl1_SelectedIndexChanged(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\IOForm.cs:行号 212
+   在 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.TabControl.WmSelChange()
+   在 System.Windows.Forms.TabControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/14 15:31:16**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   在 QM9505.IOForm.AddControl_Y(DataGridView dataGridView, Int32 num) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\IOForm.cs:行号 372
+   在 QM9505.IOForm.tabControl1_SelectedIndexChanged(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\IOForm.cs:行号 226
+   在 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.TabControl.WmSelChange()
+   在 System.Windows.Forms.TabControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/14 15:40:14**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.PictureBox.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.DataGridView.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnParentVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.ScrollableControl.OnVisibleChanged(EventArgs e)
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.TabPage.set_Visible(Boolean value)
+   在 System.Windows.Forms.TabControl.UpdateTabSelection(Boolean updateFocus)
+   在 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.TabControl.WmSelChange()
+   在 System.Windows.Forms.TabControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+
+**********2023/06/14 15:56:26**********
+创建窗口句柄时出错。   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.ControlCollection.Add(Control value)
+   在 QM9505.IOForm.AddControl_Y(DataGridView dataGridView, Int32 num) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\IOForm.cs:行号 372
+   在 QM9505.IOForm.tabControl1_SelectedIndexChanged(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.8\QM9505\IOForm.cs:行号 226
+   在 System.Windows.Forms.TabControl.OnSelectedIndexChanged(EventArgs e)
+   在 System.Windows.Forms.TabControl.WmSelChange()
+   在 System.Windows.Forms.TabControl.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+****************************异常文本****************************
+【出现时间】：2023/6/14 16:08:04
+【异常类型】：Exception
+【异常信息】：异常信息:
+【堆栈调用】：   在 QM9505.UserForm.TempRead1(String num) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.14\QM9505\UserForm.cs:行号 17327
+   在 QM9505.UserForm.Temp() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.14\QM9505\UserForm.cs:行号 14183
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/6/14 16:08:39
+【异常类型】：Exception
+【异常信息】：异常信息:
+【堆栈调用】：   在 QM9505.UserForm.TempRead1(String num) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.14\QM9505\UserForm.cs:行号 17327
+   在 QM9505.UserForm.Temp() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.14\QM9505\UserForm.cs:行号 14183
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/6/14 16:08:53
+【异常类型】：Exception
+【异常信息】：异常信息:
+【堆栈调用】：   在 QM9505.UserForm.TempRead1(String num) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.14\QM9505\UserForm.cs:行号 17327
+   在 QM9505.UserForm.Temp() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.14\QM9505\UserForm.cs:行号 14183
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/6/14 16:11:52
+【异常类型】：Exception
+【异常信息】：异常信息:
+【堆栈调用】：   在 QM9505.UserForm.TempRead2(String num) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.14\QM9505\UserForm.cs:行号 17370
+   在 QM9505.UserForm.Temp() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.14\QM9505\UserForm.cs:行号 14188
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/6/19 19:31:30
+【异常类型】：IndexOutOfRangeException
+【异常信息】：索引超出了数组界限。
+【堆栈调用】：   在 QM9505.Motion.SetCoordinate1(Int16 cardNo, Int16 crd, Int16[] axisNo)
+   在 QM9505.Motion.Line1Move2(Int16[] axisNo, Int16 axisNo1, Int16 axisNo2, Double Vel, Double Acc, Int32 XPos, Int32 YPos)
+   在 QM9505.UserForm.DownFillLineMove(Double Xpos, Double Ypos)
+   在 QM9505.UserForm.OutAutoFillStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/6/19 19:33:01
+【异常类型】：IndexOutOfRangeException
+【异常信息】：索引超出了数组界限。
+【堆栈调用】：   在 QM9505.Motion.SetCoordinate1(Int16 cardNo, Int16 crd, Int16[] axisNo)
+   在 QM9505.Motion.Line1Move2(Int16[] axisNo, Int16 axisNo1, Int16 axisNo2, Double Vel, Double Acc, Int32 XPos, Int32 YPos)
+   在 QM9505.UserForm.DownFillLineMove(Double Xpos, Double Ypos)
+   在 QM9505.UserForm.OutAutoFillStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/6/19 19:37:52
+【异常类型】：IndexOutOfRangeException
+【异常信息】：索引超出了数组界限。
+【堆栈调用】：   在 QM9505.Motion.SetCoordinate1(Int16 cardNo, Int16 crd, Int16[] axisNo)
+   在 QM9505.Motion.Line1Move2(Int16[] axisNo, Int16 axisNo1, Int16 axisNo2, Double Vel, Double Acc, Int32 XPos, Int32 YPos)
+   在 QM9505.UserForm.DownFillLineMove(Double Xpos, Double Ypos)
+   在 QM9505.UserForm.OutAutoFillStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/6/19 19:41:18
+【异常类型】：IndexOutOfRangeException
+【异常信息】：索引超出了数组界限。
+【堆栈调用】：   在 QM9505.Motion.SetCoordinate1(Int16 cardNo, Int16 crd, Int16[] axisNo)
+   在 QM9505.Motion.Line1Move2(Int16[] axisNo, Int16 axisNo1, Int16 axisNo2, Double Vel, Double Acc, Int32 XPos, Int32 YPos)
+   在 QM9505.UserForm.DownFillLineMove(Double Xpos, Double Ypos)
+   在 QM9505.UserForm.OutAutoFillStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/6/20 14:06:21
+【异常类型】：IndexOutOfRangeException
+【异常信息】：索引超出了数组界限。
+【堆栈调用】：   在 QM9505.UserForm.ModelToPhoto(String str)
+   在 QM9505.UserForm.RobotAutoStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/6/20 14:13:45
+【异常类型】：IndexOutOfRangeException
+【异常信息】：索引超出了数组界限。
+【堆栈调用】：   在 QM9505.UserForm.ModelToPhoto(String str)
+   在 QM9505.UserForm.RobotAutoStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/6/20 15:05:36
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：索引超出范围。必须为非负值并小于集合大小。
+参数名: index
+【堆栈调用】：   在 System.Collections.ArrayList.get_Item(Int32 index)
+   在 System.Windows.Forms.DataGridViewCellCollection.get_Item(Int32 index)
+   在 QM9505.UserForm.OKDataGrid_CellMouseUp(Object sender, DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnCellMouseUp(DataGridViewCellMouseEventArgs e)
+   在 System.Windows.Forms.DataGridView.OnMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.DataGridView.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/7/18 12:28:26
+【异常类型】：InvalidOperationException
+【异常信息】：集合已修改；可能无法执行枚举操作。
+【堆栈调用】：   在 System.ThrowHelper.ThrowInvalidOperationException(ExceptionResource resource)
+   在 System.Collections.Generic.List`1.Enumerator.MoveNextRare()
+   在 System.Collections.Generic.List`1.Enumerator.MoveNext()
+   在 System.Windows.Forms.DataVisualization.Charting.Data.DataManager.GetMinMaxYValue(Int32 valueIndex, Double& min, Double& max, String[] series)
+   在 System.Windows.Forms.DataVisualization.Charting.ChartArea.GetValuesFromData(Axis axis, Double& autoMinimum, Double& autoMaximum)
+   在 System.Windows.Forms.DataVisualization.Charting.ChartArea.SetDefaultFromData(Axis axis)
+   在 System.Windows.Forms.DataVisualization.Charting.ChartArea.SetDefaultAxesValues()
+   在 System.Windows.Forms.DataVisualization.Charting.ChartArea.SetData(Boolean initializeAxes, Boolean checkIndexedAligned)
+   在 System.Windows.Forms.DataVisualization.Charting.ChartArea.ReCalcInternal()
+   在 System.Windows.Forms.DataVisualization.Charting.ChartPicture.Paint(Graphics graph, Boolean paintTopLevelElementOnly)
+   在 System.Windows.Forms.DataVisualization.Charting.Chart.OnPaint(PaintEventArgs e)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/7/19 3:11:33
+【异常类型】：IOException
+【异常信息】：文件“C:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\bin\Debug\Map\16\tray.txt”正由另一进程使用，因此该进程无法访问此文件。
+【堆栈调用】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path)
+   在 System.IO.File.OpenText(String path)
+   在 QM9505.TXT.ReadTXT1(String path1) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TXT.cs:行号 69
+   在 QM9505.TrayForm.Tray4Form.timer1_Tick(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TrayForm\Tray4Form.cs:行号 77
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/7/19 15:34:51
+【异常类型】：IOException
+【异常信息】：文件“C:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\bin\Debug\Map\8\tray.txt”正由另一进程使用，因此该进程无法访问此文件。
+【堆栈调用】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path)
+   在 System.IO.File.OpenText(String path)
+   在 QM9505.TXT.ReadTXT1(String path1)
+   在 QM9505.TrayForm.Tray2Form.timer1_Tick(Object sender, EventArgs e)
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/7/25 11:45:15
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：长度不能小于 0。
+参数名: length
+【堆栈调用】：   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TXT.cs:行号 71
+   在 QM9505.UserForm.GetMapToDown(String str) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 17655
+   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 12058
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/7/25 12:09:14
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：长度不能小于 0。
+参数名: length
+【堆栈调用】：   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TXT.cs:行号 71
+   在 QM9505.UserForm.GetMapToDown(String str) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 17655
+   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 12058
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/7/25 12:10:36
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：长度不能小于 0。
+参数名: length
+【堆栈调用】：   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TXT.cs:行号 71
+   在 QM9505.UserForm.GetMapToDown(String str) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 17655
+   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 12058
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/7/25 12:43:21
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：长度不能小于 0。
+参数名: length
+【堆栈调用】：   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TXT.cs:行号 71
+   在 QM9505.UserForm.GetMapToDown(String str) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 17655
+   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 12058
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/7/25 12:44:20
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：长度不能小于 0。
+参数名: length
+【堆栈调用】：   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TXT.cs:行号 71
+   在 QM9505.UserForm.GetMapToDown(String str) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 17655
+   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 12058
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/2 8:39:38
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：长度不能小于 0。
+参数名: length
+【堆栈调用】：   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TXT.cs:行号 71
+   在 QM9505.UserForm.GetMapToDown(String str) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 17655
+   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 11108
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/2 8:42:10
+【异常类型】：ArgumentNullException
+【异常信息】：值不能为 null。
+参数名: array
+【堆栈调用】：   在 System.Array.Reverse(Array array)
+   在 QM9505.UserForm.GetMapToDown(String str) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 17658
+   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 11108
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/2 8:43:27
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：长度不能小于 0。
+参数名: length
+【堆栈调用】：   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TXT.cs:行号 71
+   在 QM9505.UserForm.GetMapToDown(String str) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 17655
+   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 11108
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/2 8:43:46
+【异常类型】：ArgumentNullException
+【异常信息】：值不能为 null。
+参数名: array
+【堆栈调用】：   在 System.Array.Reverse(Array array)
+   在 QM9505.UserForm.GetMapToDown(String str) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 17658
+   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\UserForm.cs:行号 11108
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/10 15:26:05
+【异常类型】：IOException
+【异常信息】：文件“C:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\bin\Debug\Map\3\tray.txt”正由另一进程使用，因此该进程无法访问此文件。
+【堆栈调用】：   在 System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   在 System.IO.FileStream.Init(String path, FileMode mode, FileAccess access, Int32 rights, Boolean useRights, FileShare share, Int32 bufferSize, FileOptions options, SECURITY_ATTRIBUTES secAttrs, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options, String msgPath, Boolean bFromProxy, Boolean useLongPath, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks, Int32 bufferSize, Boolean checkHost)
+   在 System.IO.StreamReader..ctor(String path)
+   在 System.IO.File.OpenText(String path)
+   在 QM9505.TXT.ReadTXT1(String path1) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TXT.cs:行号 69
+   在 QM9505.TrayForm.Tray1Form.timer1_Tick(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.6.30\QM9505\TrayForm\Tray1Form.cs:行号 71
+   在 System.Windows.Forms.Timer.OnTick(EventArgs e)
+   在 System.Windows.Forms.Timer.TimerNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/21 11:46:46
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 646
+   在 QM9505.UserForm.UserForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\UserForm.cs:行号 258
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadMainForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 182
+   在 QM9505.MainForm.MainForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 91
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/21 11:48:00
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 646
+   在 QM9505.ParameterForm.ParameterForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 82
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadSubForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 197
+   在 QM9505.MainForm.参数界面ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 253
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/21 15:36:12
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 646
+   在 QM9505.UserForm.UserForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\UserForm.cs:行号 258
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadMainForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 182
+   在 QM9505.MainForm.MainForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 91
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/21 15:36:20
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 646
+   在 QM9505.ParameterForm.ParameterForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 82
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadSubForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 197
+   在 QM9505.MainForm.参数界面ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 253
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/21 15:37:15
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 646
+   在 QM9505.UserForm.UserForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\UserForm.cs:行号 258
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadMainForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 182
+   在 QM9505.MainForm.MainForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 91
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.Form.WmShowWindow(Message& m)
+   在 System.Windows.Forms.Form.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/22 10:57:48
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/25 1:15:11
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/25 9:05:14
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：InvalidArgument=“-1”的值对于“index”无效。
+参数名: index
+【堆栈调用】：   在 System.Windows.Forms.ComboBox.ObjectCollection.get_Item(Int32 index)
+   在 System.Windows.Forms.ComboBox.UpdateText()
+   在 System.Windows.Forms.ComboBox.set_SelectedIndex(Int32 value)
+   在 System.Windows.Forms.ComboBox.set_Text(String value)
+   在 QM9505.UserForm.RefreshT() 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\UserForm.cs:行号 12549
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/25 13:31:53
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.UserForm.btnLoad_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\UserForm.cs:行号 17208
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/25 13:32:17
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.ParameterForm.ParameterForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 82
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadSubForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 197
+   在 QM9505.MainForm.参数界面ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 253
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/25 13:35:03
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.UserForm.btnLoad_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\UserForm.cs:行号 17208
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/25 13:35:50
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.ParameterForm.ParameterForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 82
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadSubForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 197
+   在 QM9505.MainForm.参数界面ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 253
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/25 13:39:05
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.ParameterForm.ParameterForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 82
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadSubForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 197
+   在 QM9505.MainForm.参数界面ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 253
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/27 9:34:01
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.UserForm.btnLoad_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\UserForm.cs:行号 17208
+   在 System.Windows.Forms.Control.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnClick(EventArgs e)
+   在 System.Windows.Forms.Button.OnMouseUp(MouseEventArgs mevent)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ButtonBase.WndProc(Message& m)
+   在 System.Windows.Forms.Button.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/27 9:35:35
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.ParameterForm.ParameterForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 82
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadSubForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 197
+   在 QM9505.MainForm.参数界面ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 253
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/27 9:36:37
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.ParameterForm.ParameterForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 82
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadSubForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 197
+   在 QM9505.MainForm.参数界面ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 253
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/27 9:36:54
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.ParameterForm.ParameterForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 82
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadSubForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 197
+   在 QM9505.MainForm.参数界面ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 253
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/27 11:03:32
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.ParameterForm.ParameterForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 82
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadSubForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 197
+   在 QM9505.MainForm.参数界面ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 253
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/27 11:06:00
+【异常类型】：FormatException
+【异常信息】：输入字符串的格式不正确。
+【堆栈调用】：   在 System.Number.ParseDouble(String value, NumberStyles options, NumberFormatInfo numfmt)
+   在 System.Convert.ToDouble(String value)
+   在 QM9505.ParameterForm.LoadParameter(String path) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 583
+   在 QM9505.ParameterForm.ParameterForm_Load(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\ParameterForm.cs:行号 82
+   在 System.Windows.Forms.Form.OnLoad(EventArgs e)
+   在 System.Windows.Forms.Form.OnCreateControl()
+   在 System.Windows.Forms.Control.CreateControl(Boolean fIgnoreVisible)
+   在 System.Windows.Forms.Control.CreateControl()
+   在 System.Windows.Forms.Control.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Form.SetVisibleCore(Boolean value)
+   在 System.Windows.Forms.Control.Show()
+   在 QM9505.MainForm.LoadSubForm(Object form) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 197
+   在 QM9505.MainForm.参数界面ToolStripMenuItem_Click(Object sender, EventArgs e) 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\MainForm.cs:行号 253
+   在 System.Windows.Forms.ToolStripItem.RaiseEvent(Object key, EventArgs e)
+   在 System.Windows.Forms.ToolStripMenuItem.OnClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleClick(EventArgs e)
+   在 System.Windows.Forms.ToolStripItem.HandleMouseUp(MouseEventArgs e)
+   在 System.Windows.Forms.ToolStripItem.FireEventInteractive(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStripItem.FireEvent(EventArgs e, ToolStripItemEventType met)
+   在 System.Windows.Forms.ToolStrip.OnMouseUp(MouseEventArgs mea)
+   在 System.Windows.Forms.Control.WmMouseUp(Message& m, MouseButtons button, Int32 clicks)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.ScrollableControl.WndProc(Message& m)
+   在 System.Windows.Forms.ToolStrip.WndProc(Message& m)
+   在 System.Windows.Forms.MenuStrip.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/28 10:28:46
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/28 10:29:10
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/28 10:29:11
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/28 23:41:17
+【异常类型】：IndexOutOfRangeException
+【异常信息】：索引超出了数组界限。
+【堆栈调用】：   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\UserForm.cs:行号 12133
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/29 0:06:43
+【异常类型】：IndexOutOfRangeException
+【异常信息】：索引超出了数组界限。
+【堆栈调用】：   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\UserForm.cs:行号 12133
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/29 0:10:11
+【异常类型】：IndexOutOfRangeException
+【异常信息】：索引超出了数组界限。
+【堆栈调用】：   在 QM9505.UserForm.RobotAutoStart() 位置 c:\Users\Administrator\Desktop\QM9505_23.8.4\QM9505\UserForm.cs:行号 12133
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/29 1:08:05
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/29 1:12:24
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/29 12:08:08
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：长度不能小于 0。
+参数名: length
+【堆栈调用】：   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1)
+   在 QM9505.UserForm.GetMapToDown(String str)
+   在 QM9505.UserForm.RobotAutoStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/29 12:14:12
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：长度不能小于 0。
+参数名: length
+【堆栈调用】：   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1)
+   在 QM9505.UserForm.GetMapToDown(String str)
+   在 QM9505.UserForm.RobotAutoStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/29 13:10:38
+【异常类型】：ArgumentOutOfRangeException
+【异常信息】：长度不能小于 0。
+参数名: length
+【堆栈调用】：   在 System.String.Substring(Int32 startIndex, Int32 length)
+   在 QM9505.TXT.ReadTXT1(String path1)
+   在 QM9505.UserForm.GetMapToDown(String str)
+   在 QM9505.UserForm.RobotAutoStart()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/29 19:39:06
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/8/30 4:40:50
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/9/5 9:20:00
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/9/5 15:01:57
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/9/5 16:20:57
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/9/6 19:50:41
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/9/6 20:11:34
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/9/6 21:31:32
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/2 5:56:27
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/2 9:10:35
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/2 20:11:57
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/4 13:17:57
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/5 2:18:31
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/7 10:21:15
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/7 13:38:18
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/7 16:53:46
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/7 16:54:26
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/7 17:03:18
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/7 17:03:25
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/8 0:18:24
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/8 2:17:38
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/8 11:17:55
+【异常类型】：Win32Exception
+【异常信息】：创建窗口句柄时出错。
+【堆栈调用】：   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.ControlForm.GPSForm.DrawLine()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/8 23:36:09
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/9 4:48:21
+【异常类型】：ArgumentException
+【异常信息】：参数无效。
+【堆栈调用】：   在 System.Drawing.Image.get_RawFormat()
+   在 System.Drawing.Graphics.DrawImage(Image image, Int32 x, Int32 y, Int32 width, Int32 height)
+   在 System.Drawing.Graphics.DrawImage(Image image, Rectangle rect)
+   在 System.Windows.Forms.PictureBox.OnPaint(PaintEventArgs pe)
+   在 System.Windows.Forms.Control.PaintWithErrorHandling(PaintEventArgs e, Int16 layer)
+   在 System.Windows.Forms.Control.WmPaint(Message& m)
+   在 System.Windows.Forms.Control.WndProc(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message& m)
+   在 System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message& m)
+   在 System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/12 17:59:54
+【异常类型】：NullReferenceException
+【异常信息】：未将对象引用设置到对象的实例。
+【堆栈调用】：   在 System.IO.Ports.SerialStream.Dispose(Boolean disposing)
+   在 System.IO.Ports.SerialStream.Finalize()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/15 10:04:51
+【异常类型】：Win32Exception
+【异常信息】：创建窗口句柄时出错。
+【堆栈调用】：   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.get_WindowText()
+   在 System.Windows.Forms.Control.get_Text()
+   在 System.Windows.Forms.PictureBox.get_Text()
+   在 System.Windows.Forms.Control.set_Text(String value)
+   在 System.Windows.Forms.PictureBox.set_Text(String value)
+   在 QM9505.UserForm.RefreshT()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
+****************************异常文本****************************
+【出现时间】：2023/11/15 18:59:08
+【异常类型】：Win32Exception
+【异常信息】：创建窗口句柄时出错。
+【堆栈调用】：   在 System.Windows.Forms.NativeWindow.CreateHandle(CreateParams cp)
+   在 System.Windows.Forms.Control.CreateHandle()
+   在 System.Windows.Forms.Control.get_Handle()
+   在 System.Windows.Forms.Control.CreateGraphicsInternal()
+   在 System.Windows.Forms.Control.CreateGraphics()
+   在 QM9505.ControlForm.GPSForm.DrawLine()
+   在 System.Threading.ThreadHelper.ThreadStart_Context(Object state)
+   在 System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state, Boolean preserveSyncCtx)
+   在 System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   在 System.Threading.ThreadHelper.ThreadStart()
+***************************************************************
+
